@@ -1,0 +1,29 @@
+# Entornos virtuales
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Modelos y checkpoints (binarios grandes)
+backend/models/*/q_table.npy
+backend/models/*/checkpoints/*.npy
+
+# Bitácora generada automáticamente (sí versionar el diario y DECISIONES, no los CSVs grandes)
+bitacora/runs/
+!bitacora/DIARIO_DESARROLLO.md
+!bitacora/DECISIONES.md
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+.coverage
